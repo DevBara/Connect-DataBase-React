@@ -24,11 +24,10 @@ export default class employee extends Component {
             return<p>Loading...</p>
         }
         return (
-            <div className="App">
-              <div className="App-intro">
+            <div className ="employeeContainer">
                 <h2>Employee List</h2>
                 {employees.map(employee =>
-                  <div key={employee.id}>
+                  <div key={employee.id} className="employeeParent">
                       <table className="employeeTable">
                         <tr>
                           <th>Employee Id</th>
@@ -45,7 +44,9 @@ export default class employee extends Component {
                       </table>
                   </div>
                 )}
-              </div>
+                <button>Edit</button>
+                <button>Update</button>
+
           </div>
         )
     }
