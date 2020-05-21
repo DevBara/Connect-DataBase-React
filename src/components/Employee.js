@@ -29,11 +29,20 @@ export default class employee extends Component {
                 <h2>Employee List</h2>
                 {employees.map(employee =>
                   <div key={employee.id}>
-                    {employee.firstName}
-                    <br></br>
-                    {employee.lastName}
-                    <br></br>
-                    {employee.email}
+                      <table className="employeeTable">
+                        <tr>
+                          <th>Employee Id</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Email</th>
+                        </tr>
+                        <tr>
+                          <td>{employee.id}</td>
+                          <td>{employee.firstName}</td>
+                          <td>{employee.lastName}</td>
+                          <td>{employee.email}</td>
+                        </tr>
+                      </table>
                   </div>
                 )}
               </div>
