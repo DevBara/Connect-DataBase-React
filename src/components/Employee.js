@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Button, ButtonGroup, Container, Table } from 'reactstrap';
-import AppNavbar from './AppNavBar';
 import { Link } from 'react-router-dom';
 
-class EmployeeList extends Component {
+class Employee extends Component {
 
   constructor(props) {
     super(props);
@@ -55,12 +54,11 @@ class EmployeeList extends Component {
 
     return (
       <div>
-        <AppNavbar/>
         <Container fluid>
           <div className="float-right">
-            <Button color="success" tag={Link} to="/employee/new">Add Group</Button>
+            <Button color="success" tag={Link} to="/employees/new">Add Employee</Button>
           </div>
-          <h3>My Employees List</h3>
+          <h3>Employees List</h3>
           <Table className="mt-4">
             <thead>
             <tr>
@@ -80,4 +78,4 @@ class EmployeeList extends Component {
   }
 }
 
-export default EmployeeList;
+export default Employee;

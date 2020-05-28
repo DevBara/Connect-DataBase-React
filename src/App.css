@@ -45,3 +45,11 @@ p{
 .container, .container-fluid {
   margin-top: 20px;
 }  
+
+
+.li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
